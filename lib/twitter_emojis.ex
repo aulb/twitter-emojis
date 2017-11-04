@@ -25,6 +25,16 @@ defmodule TwitterEmojis do
     ]
   end
 
+
+  @doc """
+  ## Examples
+
+      iex> TwitterEmojis.is_emoticon(?😀)
+      true
+
+      iex> TwitterEmojis.is_emoticon(?a)
+      false
+  """
   defmacro is_emoticon(char) do
     quote do: unquote(char) in 0x1F600..0x1F64F or unquote(char) in 0x1F300..0x1F5FF
   end
