@@ -4,19 +4,6 @@ defmodule TwitterEmojis do
   Documentation for TwitterEmojis.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> TwitterEmojis.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
-
   def test_strings do
     [
       "yes this is my 😀  favorite emoji!!! 😱😱",
@@ -24,7 +11,6 @@ defmodule TwitterEmojis do
       "Albert's feeling like 🙏🍕"
     ]
   end
-
 
   @doc """
   ## Examples
